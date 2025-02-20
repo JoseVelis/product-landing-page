@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inchi Fit</title>
-  <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inchi Fit</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <nav aria-label="Menú principal">
-      <div>
-        <a href="./index.html" aria-label="Ir a la página de inicio">
-          <p>Inchi Fit</p>
-        </a>
-      </div>
-      <ul>
-        <li><a href="#features" aria-current="page">Características</a></li>
-        <li><a href="#shipping">Envíos</a></li>
-        <li><a href="#payment">Pagos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-      <button id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
-        🌓
-      </button>
-    </nav>
-  </header>
-  <main>
-    <section id="hero" aria-labelledby="hero-title">
-      <img
-        src="./img/inchifit1.jpeg"
-        alt="Mantequilla de maní 100% natural, hecha con ingredientes naturales."
-      />
-      <div>
-        <h1 id="hero-title">Mantequilla de Maní Inchi Fit</h1>
-        <p>Mantequilla de maní casera 100% natural, sin conservantes ni azúcares añadidos.</p>
-      </div>
-    </section>
-    <section id="features" aria-labelledby="features-title">
-      <h2 id="features-title">Características</h2>
-      <ul>
-        <li>
-          <h3>100% Natural</h3>
-          <p>Elaborada con ingredientes naturales, sin conservantes ni aditivos.</p>
-          <img src="./img/inchifit2.jpeg" alt="Ingredientes naturales utilizados en la mantequilla de maní.">
-        </li>
-        <li>
-          <h3>Sin Azúcares Añadidos</h3>
-          <p>Endulzada naturalmente, sin azúcares refinados.</p>
-          <img src="./img/inchifit3.jpeg" alt="Mantequilla de maní sin azúcares añadidos.">
-        </li>
-        <li>
-          <h3>Rica en Proteínas</h3>
-          <p>Fuente de proteínas vegetales, ideal para una alimentación saludable.</p>
-          <img src="./img/inchifit1.jpeg" alt="Mantequilla de maní rica en proteínas.">
-        </li>
-      </ul>
-    </section>
-    <section id="shipping" aria-labelledby="shipping-title">
-      <h2 id="shipping-title">Opciones de Envío</h2>
-      <ul>
-        <li><strong>Zonas de cobertura:</strong> Lima, Arequipa, Cusco.</li>
-        <li><strong>Tipos de envío:</strong> Estándar (3-5 días), Express (1-2 días).</li>
-        <li><strong>Costos:</strong> Estándar: S/10, Express: S/20.</li>
-      </ul>
-    </section>
-    <section id="payment" aria-labelledby="payment-title">
-      <h2 id="payment-title">Opciones de Pago</h2>
-      <ul>
-        <li>Tarjeta de crédito/débito.</li>
-        <li>Transferencia bancaria.</li>
-        <li>Pago contra entrega.</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>Email: inchifit@gmail.com</p>
-    <p>Teléfono: +51 981 551 792</p>
-    <p>Horarios: Lunes a Viernes, 9:00 - 18:00</p>
-    <ul>
-      <li><a href="/terminos" aria-label="Leer términos y condiciones">Términos y Condiciones</a></li>
-      <li><a href="https://instagram.com/inchi.fitt" aria-label="Síguenos en Instagram">Instagram</a></li>
-    </ul>
-  </footer>
-  <script src="./js/script.js"></script>
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Menú principal">
+            <div class="brand">
+                <a href="./index.html" aria-label="Ir a la página de inicio">
+                    <strong class="brand-name">Inchi Fit</strong>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#features" aria-current="page">Características</a></li>
+                    <li><a href="#shipping">Envíos</a></li>
+                    <li><a href="#payment">Pagos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
+                🌓
+            </button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <article class="product-info">
+            <section id="hero" class="hero-section" aria-labelledby="hero-title">
+                <figure class="hero-image">
+                    <img src="./img/inchifit1.jpeg" alt="Mantequilla de maní 100% natural, hecha con ingredientes naturales.">
+                </figure>
+                <div class="hero-content">
+                    <h1 id="hero-title">Mantequilla de Maní Inchi Fit</h1>
+                    <p class="hero-description">Mantequilla de maní casera 100% natural, sin conservantes ni azúcares añadidos.</p>
+                </div>
+            </section>
+
+            <section id="features" class="features-section" aria-labelledby="features-title">
+                <h2 id="features-title">Características</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>100% Natural</h3>
+                        <p>Elaborada con ingredientes naturales, sin conservantes ni aditivos.</p>
+                        <figure>
+                            <img src="./img/inchifit2.jpeg" alt="Ingredientes naturales utilizados en la mantequilla de maní.">
+                        </figure>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Sin Azúcares Añadidos</h3>
+                        <p>Endulzada naturalmente, sin azúcares refinados.</p>
+                        <figure>
+                            <img src="./img/inchifit3.jpeg" alt="Mantequilla de maní sin azúcares añadidos.">
+                        </figure>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Rica en Proteínas</h3>
+                        <p>Fuente de proteínas vegetales, ideal para una alimentación saludable.</p>
+                        <figure>
+                            <img src="./img/inchifit1.jpeg" alt="Mantequilla de maní rica en proteínas.">
+                        </figure>
+                    </article>
+                </div>
+            </section>
+
+            <section id="shipping" class="shipping-section" aria-labelledby="shipping-title">
+                <h2 id="shipping-title">Opciones de Envío</h2>
+                <dl class="shipping-details">
+                    <dt>Zonas de cobertura:</dt>
+                    <dd>Lima, Arequipa, Cusco.</dd>
+                    <dt>Tipos de envío:</dt>
+                    <dd>Estándar (3-5 días), Express (1-2 días).</dd>
+                    <dt>Costos:</dt>
+                    <dd>Estándar: S/10, Express: S/20.</dd>
+                </dl>
+            </section>
+
+            <section id="payment" class="payment-section" aria-labelledby="payment-title">
+                <h2 id="payment-title">Opciones de Pago</h2>
+                <ul class="payment-methods">
+                    <li>Tarjeta de crédito/débito</li>
+                    <li>Transferencia bancaria</li>
+                    <li>Pago contra entrega</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <address class="contact-info">
+            <p>Email: <a href="mailto:inchifit@gmail.com">inchifit@gmail.com</a></p>
+            <p>Teléfono: <a href="tel:+51981551792">+51 981 551 792</a></p>
+            <p>Horarios: Lunes a Viernes, 9:00 - 18:00</p>
+        </address>
+        <nav class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="/terminos" aria-label="Leer términos y condiciones">Términos y Condiciones</a></li>
+                <li><a href="https://instagram.com/inchi.fitt" aria-label="Síguenos en Instagram">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
