@@ -219,3 +219,23 @@ h3 { font-size: var(--font-size-h3); }
         flex: 1 1 100%;
     }
 }
+/* Estilos generales para centrar secciones */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: var(--spacing-lg) auto;
+  max-width: var(--container-width);
+}
+
+/* Estilos específicos para cada sección si es necesario */
+.features, .shipping-options, .payment-options {
+  width: 100%;
+  padding: var(--spacing-md);
+}
+
+/* Ajustes adicionales para el contenido dentro de las secciones */
+.features h2, .shipping-options h2, .payment-options h2 {
+  margin-bottom: var(--spacing-md);
+}
