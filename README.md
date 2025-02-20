@@ -83,8 +83,3 @@ La IA sugirió:
 
 ---
 
-## Instrucciones para Ejecutar el Proyecto
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/inchi-fit.git
