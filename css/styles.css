@@ -113,7 +113,7 @@
 .dark-theme {
     --color-text: #f8f9fa;
     --color-background: #121212;
-    --color-primary: #9575a7;
+    --color-primary: #d3b21f;
     --color-secondary: #4a6baf;
     --color-footer: #1a1a1a;
 }
@@ -624,7 +624,7 @@
   }
   
   .btn:hover {
-    background-color: #6a4e78;
+    background-color: #290f9c;
     transform: translateY(-2px);
   }
   
