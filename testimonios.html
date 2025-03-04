@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios - Essenze Fragrances</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essenze Fragrances | Testimonios</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-gray-50">
     <!-- Header (igual que en index.html) -->
     <header class="fixed w-full top-0 bg-white shadow-md z-50">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between" role="navigation" aria-label="Navegación principal">
             <div class="flex items-center">
                 <a href="index.html" class="text-2xl font-serif font-bold text-gray-800">Essenze</a>
                 <span class="text-sm text-gray-600 ml-2">Fragrances</span>
@@ -22,6 +23,11 @@
                 <a href="index.html#contacto" class="text-gray-600 hover:text-gray-900">Contacto</a>
                 <a href="testimonios.html" class="text-gray-600 hover:text-gray-900">Testimonios</a>
                 <a href="compra.html" class="text-gray-600 hover:text-gray-900">Carrito</a>
+                <button class="theme-toggle text-gray-600 hover:text-gray-900 ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -39,8 +45,11 @@
                 <!-- Testimonio 1 -->
                 <div class="bg-white rounded-lg shadow-lg p-6">
                     <div class="flex items-center mb-4">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Carlos Mendoza" 
-                            class="w-12 h-12 rounded-full mr-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" 
+                            alt="Carlos Mendoza - Cliente satisfecho" 
+                            class="w-12 h-12 rounded-full mr-4"
+                            loading="lazy">
                         <div>
                             <h3 class="font-bold">Carlos Mendoza</h3>
                             <p class="text-gray-600">Empresario</p>
@@ -56,7 +65,74 @@
                     <p class="text-gray-600">"La calidad y duración de las fragancias es excepcional. Totalmente recomendado."</p>
                 </div>
 
-                <!-- Testimonio 2 y 3 similares... -->
+                <!-- Testimonio 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+                            alt="Ana García - Cliente satisfecha" 
+                            class="w-12 h-12 rounded-full mr-4"
+                            loading="lazy">
+                        <div>
+                            <h3 class="font-bold">Ana García</h3>
+                            <p class="text-gray-600">Diseñadora</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"Las fragancias son únicas y duraderas. El servicio al cliente es excelente."</p>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+                            alt="Miguel Torres - Cliente satisfecho" 
+                            class="w-12 h-12 rounded-full mr-4"
+                            loading="lazy">
+                        <div>
+                            <h3 class="font-bold">Miguel Torres</h3>
+                            <p class="text-gray-600">Chef</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"Encontré mi fragancia perfecta gracias a sus recomendaciones personalizadas."</p>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e"
+                            alt="Laura Díaz - Cliente satisfecha" 
+                            class="w-12 h-12 rounded-full mr-4"
+                            loading="lazy">
+                        <div>
+                            <h3 class="font-bold">Laura Díaz</h3>
+                            <p class="text-gray-600">Arquitecta</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"La calidad de los perfumes es excepcional. Definitivamente volveré a comprar."</p>
+                </div>
             </div>
         </section>
 
@@ -84,5 +160,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Verificar si el navegador soporta JavaScript
+        document.documentElement.classList.add('js-enabled');
+
+        // Botón de cambio de tema
+        const themeToggle = document.querySelector('.theme-toggle');
+        if (themeToggle) {
+            // Cargar tema guardado
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', 
+                    document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+                );
+            });
+        }
+    </script>
 </body>
 </html>

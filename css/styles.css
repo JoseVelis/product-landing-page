@@ -7,7 +7,7 @@
   
   /* Variables de colores */
   :root {
-    --color-primary: #7b5e8a;       /* Púrpura suave para perfumes */
+    --color-primary: #121975;       /* Púrpura suave para perfumes */
     --color-secondary: #2c3e50;
     --color-accent: #d4af37;        /* Dorado para representar lujo */
     --color-light: #f8f9fa;
@@ -18,16 +18,180 @@
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
   }
+
+  /* Añadir después de tus variables existentes */
+
+.backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Ajuste para el tema oscuro */
+.dark-theme #inicio .bg-white\/30 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Animación suave al cargar */
+#inicio .relative {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
   
   /* Tema oscuro */
   .dark-theme {
     --color-text: #f8f9fa;
     --color-background: #121212;
-    --color-primary: #9575a7;       /* Versión más clara para modo oscuro */
-    --color-secondary: #4a6baf;
+    --color-primary: #d4af37;    /* Color dorado para acentos */
+    --color-secondary: #101a70;
     --color-footer: #1a1a1a;
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-background);
+    color: var(--color-text);
   }
+
+  /* Estilos para tema oscuro */
+.dark-theme {
+    --color-text: #f8f9fa;
+    --color-background: #121212;
+    --color-primary: #06051b;
+    --color-secondary: #4a6baf;
+    --color-footer: #1a1a1a;
+}
+
+/* Ajustes específicos para Tailwind en modo oscuro */
+.dark-theme .bg-white {
+    background-color: #1a1a1a !important;
+}
+
+.dark-theme .text-gray-800 {
+    color: #f8f9fa !important;
+}
+
+.dark-theme .text-gray-600 {
+    color: #d1d5db !important;
+}
+
+.dark-theme .bg-gray-100 {
+    background-color: #2d2d2d !important;
+}
+
+.dark-theme .bg-gray-50 {
+    background-color: #121212 !important;
+}
+
+.dark-theme .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Estilos para el botón de tema */
+.theme-toggle {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.dark-theme .theme-toggle svg {
+    color: #f8f9fa;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ajustes para el tema oscuro */
+.dark-theme {
+    --color-text: #f8f9fa;
+    --color-background: #121212;
+    --color-primary: #9575a7;
+    --color-secondary: #4a6baf;
+    --color-footer: #1a1a1a;
+}
+
+/* Ajustes específicos para Tailwind en modo oscuro */
+.dark-theme .bg-gray-50 {
+    background-color: var(--color-background) !important;
+}
+
+.dark-theme .bg-white {
+    background-color: #1a1a1a !important;
+}
+
+.dark-theme .text-gray-800,
+.dark-theme .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.dark-theme .text-gray-600 {
+    color: #9ca3af !important;
+}
+
+.dark-theme .bg-gray-100 {
+    background-color: #1a1a1a !important;
+}
+
+/* Ajustes para elementos específicos */
+.dark-theme .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-theme input,
+.dark-theme textarea {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: var(--color-text) !important;
+}
+
+.dark-theme .theme-toggle {
+    color: var(--color-text);
+}
+
+/* Asegurar visibilidad de textos importantes */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme .font-bold {
+    color: var(--color-text) !important;
+}
+
+/* Ajustes específicos para textos en modo oscuro */
+.dark-theme .text-gray-800,
+.dark-theme .text-gray-900,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme .font-bold {
+    color: var(--color-primary) !important; /* Color dorado para títulos */
+}
+
+.dark-theme .text-gray-600 {
+    color: #d1d5db !important;  /* Gris claro para textos secundarios */
+}
+
+/* Ajustes para fondos en modo oscuro */
+.dark-theme .bg-white,
+.dark-theme .bg-gray-100 {
+    background-color: #1a1a1a !important;
+}
+
+.dark-theme .bg-gray-50 {
+    background-color: var(--color-background) !important;
+}
+
+/* Ajustes para sombras en modo oscuro */
+.dark-theme .shadow-md,
+.dark-theme .shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5) !important;
+}
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -631,3 +795,50 @@
   .js-enabled .theme-toggle {
     display: block;
   }
+
+/* Añadir al archivo styles.css */
+.fas.fa-star {
+    transition: transform 0.2s ease;
+}
+
+.fas.fa-star:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para la sección hero */
+#inicio .relative {
+    position: relative;
+    z-index: 10;
+}
+
+/* Ajustar el contenido del hero para mejor visibilidad */
+#inicio .text-white {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Mejorar el contenedor con efecto glassmorphism */
+#inicio .bg-white\/30 {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para tema claro */
+#inicio h2, 
+#inicio p {
+    color: rgb(0, 0, 0) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes para tema oscuro */
+.dark-theme #inicio .bg-white\/30 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme #inicio h2,
+.dark-theme #inicio p {
+    color: var(--color-accent) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

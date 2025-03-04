@@ -11,6 +11,7 @@
      crossorigin="anonymous"
      >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="bg-light">
     <!-- Navegación -->
@@ -44,6 +45,9 @@
               <a class="nav-link active" href="compra.html">Carrito</a>
             </li>
           </ul>
+          <button class="theme-toggle text-gray-600 hover:text-gray-900 ml-4">
+            <i class="bi bi-moon-fill"></i>
+          </button>
         </div>
       </div>
     </nav>
@@ -63,8 +67,11 @@
               <!-- Producto 1 -->
               <div class="row mb-4 align-items-center">
                 <div class="col-md-3">
-                  <img src="https://soghaat.co.uk/wp-content/uploads/2023/07/fotor_2023-7-3_14_15_40.jpg.webp" 
-                       alt="Essence Noir" class="img-fluid rounded">
+                  <img 
+                    src="https://soghaat.co.uk/wp-content/uploads/2023/07/fotor_2023-7-3_14_15_40.jpg.webp" 
+                    alt="Essence Noir - Fragancia intensa y misteriosa" 
+                    class="w-full h-64 object-cover"
+                    loading="lazy">
                 </div>
                 <div class="col-md-6">
                   <h5 class="fw-bold">Essence Noir</h5>
@@ -79,7 +86,9 @@
                 </div>
                 <div class="col-md-3 text-end">
                   <h5 class="mb-0">S/.89.99</h5>
-                  <button class="btn btn-link text-danger p-0 mt-2">
+                  <button 
+                    class="btn btn-link text-danger p-0 mt-2"
+                    aria-label="Eliminar producto">
                     <i class="bi bi-trash"></i> Eliminar
                   </button>
                 </div>
@@ -104,7 +113,9 @@
                 </div>
                 <div class="col-md-3 text-end">
                   <h5 class="mb-0">S/.79.99</h5>
-                  <button class="btn btn-link text-danger p-0 mt-2">
+                  <button 
+                    class="btn btn-link text-danger p-0 mt-2"
+                    aria-label="Eliminar producto">
                     <i class="bi bi-trash"></i> Eliminar
                   </button>
                 </div>
@@ -152,6 +163,39 @@
         </div>
       </div>
     </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Essenze Fragrances</h5>
+            <p class="text-muted">Fragancias exclusivas que definen tu personalidad</p>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html#productos" class="text-muted">Productos</a></li>
+              <li><a href="testimonios.html" class="text-muted">Testimonios</a></li>
+              <li><a href="index.html#nosotros" class="text-muted">Sobre Nosotros</a></li>
+              <li><a href="index.html#contacto" class="text-muted">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Contacto</h5>
+            <ul class="list-unstyled text-muted">
+              <li><i class="bi bi-geo-alt me-2"></i>Lima, Perú</li>
+              <li><i class="bi bi-telephone me-2"></i>+51 976 508 533</li>
+              <li><i class="bi bi-envelope me-2"></i>info@essenze.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 

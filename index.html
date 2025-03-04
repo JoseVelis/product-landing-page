@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Essenze Fragrances | Perfumes de Lujo</title>
+    <meta name="description" content="Essenze Fragrances - Perfumes de lujo y fragancias exclusivas. Descubre nuestra colección de perfumes únicos.">
+    <meta name="keywords" content="perfumes, fragancias, lujo, essenze, perfumes de diseñador">
+    <link rel="canonical" href="https://essenze.com" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="bg-gray-50">
     <header class="fixed w-full top-0 bg-white shadow-md z-50">
-      <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <nav class="container mx-auto px-4 py-4 flex items-center justify-between" role="navigation" aria-label="Main navigation">
         <div class="flex items-center">
           <h1 class="text-2xl font-serif font-bold text-gray-800">Essenze</h1>
           <span class="text-sm text-gray-600 ml-2">Fragrances</span>
@@ -20,20 +24,39 @@
           <a href="#contacto" class="text-gray-600 hover:text-gray-900">Contacto</a>
           <a href="testimonios.html" class="text-gray-600 hover:text-gray-900">Testimonios</a>
           <a href="compra.html" class="text-gray-600 hover:text-gray-900">Carrito</a>
+          <button 
+            id="theme-toggle" 
+            class="theme-toggle text-gray-600 hover:text-gray-900 ml-4"
+            aria-label="Cambiar tema">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
 
     <main class="container mx-auto px-4 pt-24">
-      <section id="inicio" class="min-h-screen flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-5xl font-serif font-bold text-gray-800 mb-4">Descubre tu esencia</h2>
-          <p class="text-xl text-gray-600 mb-8">Fragancias exclusivas que definen tu personalidad</p>
-          <button class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
+      <section id="inicio" class="min-h-screen flex items-center justify-center relative">
+    <!-- Fondo con overlay -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('https://images.unsplash.com/photo-1615397349754-cfa2066a298f?q=80&w=1974&auto=format&fit=crop');
+                filter: brightness(0.7);">
+    </div>
+    
+    <!-- Contenido con efecto glassmorphism -->
+    <div class="relative z-10 text-center p-12 backdrop-blur-sm bg-white/30 rounded-xl shadow-2xl max-w-3xl mx-4">
+        <h2 class="text-5xl font-serif font-bold text-white mb-4">
+            Descubre tu esencia
+        </h2>
+        <p class="text-xl text-white mb-8">
+            Fragancias exclusivas que definen tu personalidad
+        </p>
+        <button class="bg-black/80 text-white px-8 py-3 rounded-full hover:bg-black transition-all duration-300 hover:scale-105">
             Ver Colección
-          </button>
-        </div>
-      </section>
+        </button>
+    </div>
+</section>
 
       <section id="productos" class="py-16">
         <div class="text-center mb-12">
@@ -44,12 +67,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Producto 1 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://soghaat.co.uk/wp-content/uploads/2023/07/fotor_2023-7-3_14_15_40.jpg.webp" alt="Perfume 1" class="w-full h-64 object-cover">
+            <img 
+                src="https://soghaat.co.uk/wp-content/uploads/2023/07/fotor_2023-7-3_14_15_40.jpg.webp" 
+                alt="Perfume 1" 
+                class="w-full h-64 object-cover"
+                loading="lazy"
+            >
             <div class="p-6">
-              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Essence Noir</h3>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Essence Noir 100ml</h3>
               <p class="text-gray-600 mb-4">Una fragancia intensa y misteriosa con notas de madera y ámbar</p>
               <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-gray-800">S/.89.99</span>
+                <span class="text-2xl font-bold text-gray-800">S/.189</span>
                 <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
                   Comprar
                 </a>
@@ -61,10 +89,10 @@
           <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <img src="https://labelleperfumes.com/cdn/shop/files/jimmy-choo-ice_800x.webp?v=1724876463" alt="Perfume 2" class="w-full h-64 object-cover">
             <div class="p-6">
-              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Man Ice</h3>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Jimmy Choo Man Ice 100ml</h3>
               <p class="text-gray-600 mb-4">Una fragancia amaderada aromática con notas de salida cítricas</p>
               <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-gray-800">S/.79.99</span>
+                <span class="text-2xl font-bold text-gray-800">S/.199</span>
                 <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
                   Comprar
                 </a>
@@ -76,14 +104,74 @@
           <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <img src="https://home.ripley.com.pe/Attachment/WOP_5/2014255662119/2014255662119-4.jpg" alt="Perfume 3" class="w-full h-64 object-cover">
             <div class="p-6">
-              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Acqua Di Gio Profondo</h3>
+              <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Acqua Di Gio Profondo 100ml</h3>
               <p class="text-gray-600 mb-4">Frescura marina combinada con notas cítricas</p>
               <div class="flex justify-between items-center">
-                <span class="text-2xl font-bold text-gray-800">S/.69.99</span>
+                <span class="text-2xl font-bold text-gray-800">S/.599</span>
                 <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
                   Comprar
                 </a>
               </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img 
+                src="https://m.media-amazon.com/images/I/51TkKJlJHsL.jpg" 
+                alt="212 VIP Black EDP" 
+                class="w-full h-64 object-cover"
+                loading="lazy"
+            >
+            <div class="p-6">
+                <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Jean Paul Gaultier Le Beau Le Parfum 125ml</h3>
+                <p class="text-gray-600 mb-4">Fragancia masculina con notas de absenta, lavanda y almizcle</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-800">S/.569</span>
+                    <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                        Comprar
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img 
+                src="https://http2.mlstatic.com/D_NQ_NP_831921-MLU74226784602_022024-O.webp" 
+                alt="Perfume Invictus Victory" 
+                class="w-full h-64 object-cover"
+                loading="lazy"
+            >
+            <div class="p-6">
+                <h3 class="text-xl font-serif font-bold text-gray-800 mb-2">Valentino Uomo Born in Roma Intense 100ml </h3>
+                <p class="text-gray-600 mb-4">Una fragancia oriental amaderada con notas de incienso y vainilla</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-800">S/.499</span>
+                    <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                        Comprar
+                    </a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img 
+                src="https://www.sephora.com/productimages/product/p442726-av-04-zoom.jpg" 
+                alt="Perfume Bad Boy" 
+                class="w-full h-64 object-cover"
+                loading="lazy"
+            >
+            <div class="p-6">
+                <h3 class="text-xl font-serif font-bold text-gray-800 mb-2"Versacae Eros Flame Edp 100ml</h3>
+                <p class="text-gray-600 mb-4">Una fraga y vainilla cos</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-800">S/.429</span>
+                    <a href="compra.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                        Comprar
+                    </a>
+                </div>
             </div>
           </div>
         </div>
@@ -136,15 +224,16 @@
           </div>
 
           <div class="max-w-2xl mx-auto">
-            <form class="space-y-6">
+            <!-- Mejorar validación del formulario -->
+            <form class="space-y-6" onsubmit="return validateForm(event)">
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
                   <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                  <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                  <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent" required minlength="2">
                 </div>
                 <div>
                   <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                  <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent" required>
                 </div>
               </div>
 
@@ -187,5 +276,21 @@
         <p>&copy; 2025 Essenze Fragrances. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.querySelector('.theme-toggle');
+        if (themeToggle) {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+            }
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', 
+                    document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+                );
+            });
+        }
+    });
+</script>
   </body>
 </html>
