@@ -842,3 +842,39 @@
     color: var(--color-accent) !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Tema Oscuro - Ajustes Principales */
+.dark-theme {
+    --color-background: #121212;
+    --color-text: #ffffff;
+    --color-accent: #d4af37;
+    background-color: var(--color-background);
+}
+
+/* Ajustes para el texto en modo oscuro */
+.dark-theme h2.text-4xl,
+.dark-theme p.text-xl {
+    color: var(--color-text) !important;
+}
+
+/* Ajustes para los productos en modo oscuro */
+.dark-theme .bg-white {
+    background-color: #1a1a1a !important;
+}
+
+.dark-theme .text-gray-800,
+.dark-theme .text-gray-600 {
+    color: #e5e5e5 !important;
+}
+
+/* Ajustes para el hero section en modo oscuro */
+.dark-theme #inicio .bg-white\/30 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(8px);
+}
+
+.dark-theme #inicio h2,
+.dark-theme #inicio p {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

@@ -1,9 +1,0 @@
-{
-  "name": "Essenze Fragrances",
-  "short_name": "Essenze",
-  "description": "Perfumes de lujo y fragancias exclusivas",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#7b5e8a"
-}
